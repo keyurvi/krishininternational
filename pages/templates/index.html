@@ -176,11 +176,16 @@
                     <div class="row">
                         <div class="col-lg-6 col-12">
                             <div class="contact-form">
-                                <form>
-                                    <input type="text" placeholder="Your name">
-                                    <input type="text" placeholder="Your Phone number">
-                                    <input type="email" placeholder="Your email">
-                                    <textarea placeholder="Message"></textarea>
+                                <form method="POST" class="post-form" action="/save_contact">
+                                    {% csrf_token %}
+                                    {{ form.name }}
+                                    {{ form.phone_number }}
+                                    {{ form.email }}
+                                    {{ form.message }}
+<!--                                    <input type="text" placeholder="Your name">-->
+<!--                                    <input type="text" placeholder="Your Phone number">-->
+<!--                                    <input type="email" placeholder="Your email">-->
+<!--                                    <textarea placeholder="Message"></textarea>-->
                                     <input type="submit" value="send" class="text-uppercase">
                                 </form>
                             </div>
@@ -217,7 +222,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-12">
-                        <a href="index.html" class="logo"><img src="{% static 'imgs/logo.jpg' %}" alt="#" /></a>
+                        <a href="index.html" class="logo"><img src="{% static 'imgs/KRISHIN.png' %}" alt="#" height="100px" width="100px" /></a>
                     </div>
                     <div class="col-lg-9 col-12">
                         <div class="row">
