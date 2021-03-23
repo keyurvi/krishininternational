@@ -10,6 +10,21 @@ def index(request):
     form = ContactUsForm()
     return render(request, 'index.html', {'form': form})
 
+def about_us(request):
+    return render(request, 'about-us.html')
+
+def products(request):
+    return render(request, 'products.html')
+
+def why_choose_us(request):
+    return render(request, 'why-choose-us.html')
+
+def globle_footprint(request):
+    return render(request, 'global_footprint.html')
+
+def contact__us(request):
+    return render(request, 'contact_us.html')
+
 def contact_us(request):
     if request.method == 'POST':
         form = ContactUsForm(request.POST)

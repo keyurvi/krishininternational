@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <head>
+        <title>About Us</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href='{% static "css/bootstrap.min.css" %}' />
+        <link rel="stylesheet" href='{% static "css/bootstrap-slider.css" %}' />
+        <link rel="stylesheet" href='{% static "css/animate.css" %}' />
+        <link rel="stylesheet" href='{% static "css/owl.carousel.min.css" %}' />
+        <link rel="stylesheet" href='{% static "css/magnific-popup.css" %}' />
+        <link rel="stylesheet" href='{% static "css/slick.css" %}' />
+        <link rel="stylesheet" href='{% static "css/fonts.css" %}' />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href='{% static "css/style.css" %}' />
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src='{% static "js/jquery-3.1.1.min.js" %}'></script>
+        <script src='{% static "js/popper.min.js" %}'></script>
+        <script src='{% static "js/bootstrap.min.js" %}'></script>
+        <script src='{% static "js/bootstrap-slider.js" %}'></script>
+        <script src='{% static "js/owl.carousel.min.js" %}'></script>
+        <script src='{% static "js/jquery.magnific-popup.min.js" %}'></script>
+        <script src='{% static "js/imagesloaded.pkgd.min.js" %}'></script>
+        <script src='{% static "js/masonry.pkgd.min.js" %}'></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyKc8gDx-Mvgab8Einm7-yS3Uf5ngplI4&amp;libraries=places"></script>
+        <script src='{% static "js/slick.min.js" %}'></script>
+        <script src='{% static "js/custom.js" %}'></script>
+    </head>
+    <body class="footer-mg">
+        <header class="header header-v5">
+            <div class="middle-header">
+                <div class="container-fluid">
+                    <div class="middle-header-wrapper">
+                        <div class="left-content">
+                            <div class="logo">
+                                <a href="index.html"><img src='{% static "img/logo.png" %}' alt="" /></a>
+                            </div>
+                            <button id="toggle_menu" class="menubar-icon"><span class="icon_menu"></span></button>
+                        </div>
+                        <div class="top-menu megamenu-version1">
+                            <nav class="navigation-top-menu">
+                                <ul class="parent-menu">
+                                    <li class="items parent level0">
+                                        <a href="{% url 'home' %}">HOME</a>
+                                    </li>
+                                    <li class="items parent level0 active">
+                                        <a href="{% url 'about-us' %}">ABOUT US</a>
+                                    </li>
+                                    <li class="items parent full-width level0">
+                                        <a href="{% url 'products' %}">OUR PRODUCTS</a>
+                                    </li>
+                                    <li class="items parent full-width level0">
+                                        <a href="{% url 'why-choose-us' %}">Why Choose Us</a>
+                                    </li>
+                                    <li class="items parent full-width level0">
+                                        <a href="{% url 'globle-footprint' %}">Global Foot print</a>
+                                    </li>
+
+                                    <li class="items parent level0">
+                                        <a href="{% url 'contact-us' %}">CONTACT US</a>
+                                    </li>
+                                    <li class="items parent serach-box">
+                                        <form>
+                                            <input type="text" name="search" placeholder="Search">
+                                        </form>
+                                        <i class="fas fa-search"></i>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="page-title-wraper about-banner">
+                <h1 class="page-heading">About Us</h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                </ol>
+            </div>
+            <section class="about-us mt-5">
+                <div class="container">
+                    <div class="content-heading">
+                            <h2 class="title">About Us</h2>
+                            <p class="mt-5">Krishin International  is  a  manufacturer  and  exporter  engaged  into  PP  Woven  and  Non-Woven  Bags  since  6  Years  located  in  industrial  hub  of  Gujarat. We  are  offering  wide  range  of  PP  Woven  Bags  and  Non-Woven  Bags  and  Sacks  like; Jumbo Bag, D-Cut Bags, W-Cut Bags,  Wine  Bottle  Bags  Etc.  Consistent  product  quality  makes  us  the  most  reliable  supplier  to  our  customers.</p>
+                        </div>
+                </div>
+            </section>
+             <section class="st-banner-3">
+                <div class="container">
+                    <div class="content-heading">
+                            <h2 class="title">Products Category</h2>
+                        </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mg-bottom-30">
+                            <div class="promobanner promobanner1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                <div class="promobanner-text middle-left">
+                                    <div class="text-center">
+                                        <h3 class="title fs_36">
+                                            PP Non Woven
+                                        </h3>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="category-img">
+                                        <img class="img-fluid" src='{% static "img/1.jpg" %}' alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mg-bottom-30">
+                            <div class="promobanner promobanner1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                <div class="promobanner-text middle-left">
+                                    <div class="text-center">
+                                        <h3 class="title fs_36">
+                                            PP Woven
+                                        </h3>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="category-img">
+                                        <img class="img-fluid" src='{% static "img/2.jpg" %}' alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="our-excellence mt-5">
+            	<div class="container">
+                            <h2 class="title">Our Excellence / Quality Management</h2>
+                            <ul>
+                            	<li>We  emphasize  overall  process  control  procedure  to  ensure  consistent  quality.</li>
+                            	<li>We improve  operator  self-process  controlling  and  inspection  capability.  </li>
+                            	<li>We  follow  well established  quality  control  and  inspection  procedures.</li>
+                            	<li>We  work  with  continuous  improvement  capability.</li>
+                            </ul>
+                            <div class="mt-5">
+                            	<p>At  Krishin,  we  are  committed  to  achieve  superior  quality  standards.  We  understand  your  requirements  and  deliver  products  and  service  that  surpass  your  expectations.  We  continuously  improve  and  innovate  in  the  products  and  services  by  utilizing  every  possible  mean  of  technological  advancements.  We  maintain  quality  standards  of  products  and  services  through  constant  evaluation,  inspection  and  verification  at  all  stages.</p>
+                            	<p>We  regard  quality  as  our  most  successful  attribute  in  entire  process.  It  is  the  key  to  our  success,  today  and  tomorrow.  Quality  is  a  hallmark  of  our  products.  We  will  ensure  growth  commitment  by  offering  a  quality  product  and  service  that  exceeds  the  customer’s  expectations  at  a  profitable  and  reasonable  cost.  We  maintain  world  class  standards  in  product  specifications,  product  packing  and  our  logistics  enabling  us  to  delight  our  customers  at  each  and  every  step  of  order  processing. </p>
+                            </div>
+            	</div>
+            </section>
+
+             <section class="st-new-arrivals">
+                <div class="container">
+                    <div class="products-widget">
+                        <div class="content-heading">
+                            <h2 class="title">Our Products</h2>
+                        </div>
+                        <div class="products-widget-content clear-margin-owl">
+                            <div id="new-products-widget" class="owl-carousel owl-one-row products-grid">
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <a href="#" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/loop/unnamed (1).jpg" %}' alt="" />
+                                            </a>
+
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-details--1st">
+                                                <div class="product-name">
+                                                    <a href="#">
+                                                        Loop Handle Bag
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <a href="#" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/wine-bag/non-woven-wine-bags-can-be-loaded-with-single-or-multiple-red-wine-non-woven-tote-bags06.jpg" %}' alt="" />
+                                            </a>
+
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-details--1st">
+                                                <div class="product-name">
+                                                    <a href="#">
+                                                        Wine bag
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <a href="#" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/5wcut-bag/24.jpg" %}' alt="" />
+                                            </a>
+
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-details--1st">
+                                                <div class="product-name">
+                                                    <a href="#">
+                                                        W cut bags
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <a href="#" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/4dcut-bag/d-cut-non-woven-carry-bag-500x500.jpg" %}' alt="" />
+                                            </a>
+
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-details--1st">
+                                                <div class="product-name">
+                                                    <a href="#">
+                                                        D cut Bags
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <a href="#" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/3leno-bag/Leno-Bag.jpg" %}' alt="" />
+                                            </a>
+
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-details--1st">
+                                                <div class="product-name">
+                                                    <a href="#">
+                                                        Leno Bags
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <a href="#" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/5wcut-bag/24.jpg" %}' alt="" />
+                                            </a>
+
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-details--1st">
+                                                <div class="product-name">
+                                                    <a href="#">
+                                                        Loop Handle Bag
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="ft-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="ft-block ft-contact">
+                                <div class="logo"><img src='{% static "img/logo.png" %}' alt="" /></div>
+                                <address>&copy; 2021 <a href="#">Krishin International</a>. All rights reserved</address>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12">
+                            <div class="ft-block ft-menu">
+                                <h4 class="title">ABOUT</h4>
+                                <div class="ft-menu-content">
+                                    <ul>
+                                        <li><a href="#" title="">Our Story</a></li>
+                                        <li><a href="#" title="">Design</a></li>
+                                        <li><a href="#" title="">Offices</a></li>
+                                        <li><a href="#" title="">Our policies</a></li>
+                                        <li><a href="#" title="">Affinity Card</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                            <div class="ft-block ft-menu">
+                                <h4 class="title">HELP</h4>
+                                <div class="ft-menu-content">
+                                    <ul>
+                                        <li><a href="#" title="">FAQ</a></li>
+                                        <li><a href="#" title="">Warranty</a></li>
+                                        <li><a href="#" title="">Shipments</a></li>
+                                        <li><a href="#" title="">Delibery & Returns</a></li>
+                                        <li><a href="#" title="">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-4 col-lg-4 col-sm-12 col-12">
+                            <div class="ft-block ft-subscribe">
+                                <h4 class="title">SUBSCRIBE TO OUR NEWSLETTER</h4>
+                                <form class="needs-validation" action="#" novalidate>
+                                    <div class="form-subscribe form-input-group">
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="Enter your email address" required />
+                                            <div class="invalid-feedback">Please input valid email ID</div>
+                                        </div>
+                                        <div class="actions-toolbar">
+                                            <button type="submit" class="btn btn-submit">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <!-- Mirrored from www.jthemes.net/themes/html/daisy/daisy-php-for-dev/about-us.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Feb 2021 09:38:19 GMT -->
+</html>

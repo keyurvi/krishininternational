@@ -1,0 +1,13 @@
+2500
+.product-banner{
+    background:url(../img/product-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.promobanner-text h3 {
+    text-transform: uppercase;
+}
+.product-name a {
+    text-transform: uppercase;
+}
