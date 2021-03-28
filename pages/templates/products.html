@@ -2,6 +2,7 @@
 {% load static %}
 <html lang="en">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link rel="icon" href='{% static "img/favicon.ico" %}' type="image/gif" sizes="16x16">
     <head>
         <title>Products</title>
         <meta charset="utf-8" />
@@ -301,7 +302,7 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
+                                            <a href="{% url 'non-woven-fabric' %}" class="product-image-link">
                                                 <img class="img-fluid product-photo" src='{% static "img/slider/Shutterstock-256975894-37586-262x328.png" %}' alt="" />
                                             </a>
 
@@ -309,7 +310,7 @@
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'non-woven-fabric' %}">
                                                         Non Woven Fabric
                                                     </a>
                                                 </div>
@@ -320,7 +321,7 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
+                                            <a href="{% url 'sack-bags' %}" class="product-image-link">
                                                 <img class="img-fluid product-photo" src='{% static "img/slider/14G-262x328.jpg" %}' alt="" />
                                             </a>
 
@@ -328,7 +329,7 @@
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'sack-bags' %}">
                                                         Sack bags
                                                     </a>
                                                 </div>
@@ -339,7 +340,7 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
+                                            <a href="{% url 'wine-bags' %}" class="product-image-link">
                                                 <img class="img-fluid product-photo" src='{% static "img/slider/wine-bottles-262x328.jpg" %}' alt="" />
                                             </a>
 
@@ -347,7 +348,7 @@
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'wine-bags' %}">
                                                         Wine bags
                                                     </a>
                                                 </div>
@@ -358,7 +359,7 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
+                                            <a href="{% url 'loop-handle-bag' %}" class="product-image-link">
                                                 <img class="img-fluid product-photo" src='{% static "img/slider/non-woven-loop-handle-bag-500x500-262x328.jpg" %}' alt="" />
                                             </a>
 
@@ -366,7 +367,7 @@
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'loop-handle-bag' %}">
                                                         Loop Handle Bag
                                                     </a>
                                                 </div>
@@ -377,7 +378,7 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
+                                            <a href="{% url 'leno-mesh-bag' %}" class="product-image-link">
                                                 <img class="img-fluid product-photo" src='{% static "img/slider/12D-262x328.jpg" %}' alt="" />
                                             </a>
 
@@ -385,7 +386,7 @@
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'leno-mesh-bag' %}">
                                                         Leno/Mesh Bag
                                                     </a>
                                                 </div>
@@ -396,7 +397,7 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
+                                            <a href="{% url 'jumbo-fibc-bag' %}" class="product-image-link">
                                                 <img class="img-fluid product-photo" src='{% static "img/slider/1000KG-1m3-Large-Bags-Flexible-Container-Chemical-262x328.png" %}' alt="" />
                                             </a>
 
@@ -404,7 +405,7 @@
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'jumbo-fibc-bag' %}">
                                                         Jumbo Bag / FIBC Bag
                                                     </a>
                                                 </div>
@@ -416,7 +417,7 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
+                                            <a href="{% url 'w-cut-bag' %}" class="product-image-link">
                                                 <img class="img-fluid product-photo" src='{% static "img/slider/wu-cut-non-woven-bag-1545054931-306-262x328.jpg" %}' alt="" />
                                             </a>
 
@@ -424,7 +425,7 @@
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'w-cut-bag' %}">
                                                        W-Cut Bag
                                                     </a>
                                                 </div>
@@ -436,7 +437,7 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
+                                            <a href="{% url 'd-cut-bag' %}" class="product-image-link">
                                                 <img class="img-fluid product-photo" src='{% static "img/slider/d-cut-non-woven-bag-gallery-1-1545054151-308-262x328.jpg" %}' alt="" />
                                             </a>
 
@@ -444,7 +445,7 @@
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'd-cut-bag' %}">
                                                        D-Cut Bag
                                                     </a>
                                                 </div>
