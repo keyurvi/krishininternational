@@ -6006,3 +6006,6 @@ li.items.parent.serach-box i.fas.fa-search {
     color: #efc370;
 }
 }
+.gmap_canvas iframe {
+    width: 100% !important;
+}

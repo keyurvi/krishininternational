@@ -25,6 +25,9 @@ def globle_footprint(request):
 def contact__us(request):
     return render(request, 'contact_us.html')
 
+def wcutbag(request):
+    return render(request, 'w-cut-bag.html')
+
 def contact_us(request):
     if request.method == 'POST':
         form = ContactUsForm(request.POST)
