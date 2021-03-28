@@ -459,7 +459,7 @@ $(document).ready(function(){
 	/* Product Detail */
 	$('#owl-carousel-gallery').owlCarousel({
 		items: 1,
-		autoplay: false,
+		autoplay: true,
 		lazyLoad: false,
 		nav: true,
 		dots: false,
@@ -504,24 +504,24 @@ $(document).ready(function(){
 		]
 	});
 	
-	$('#owl-carousel-gallery').on('changed.owl.carousel', function(event) {
-		var index = event.item.index;
-		$('#vertical-thumbnail .item-thumb').removeClass('active');
-		$('#vertical-thumbnail .item-thumb[data-owl='+index+']').addClass('active');
-		var wdw = $(window).width();
-		var ci = $('#vertical-thumbnail .item-thumb').length;
-		if(wdw >= 1199 && ci > 3) {
-			$('#vertical-thumbnail').slick('slickGoTo', index);
-		}else if(wdw < 1199 && wdw >= 768 && ci > 2){
-			$('#vertical-thumbnail').slick('slickGoTo', index);
-		}else if(wdw < 768 && wdw >= 600 && ci > 3){
-			$('#vertical-thumbnail').slick('slickGoTo', index);
-		}else if(wdw < 768 && wdw >= 600 && ci > 2){
-			$('#vertical-thumbnail').slick('slickGoTo', index);
-		}else if(wdw < 360){
-			$('#vertical-thumbnail').slick('slickGoTo', index);
-		}
-	});
+	// $('#owl-carousel-gallery').on('changed.owl.carousel', function(event) {
+	// 	var index = event.item.index;
+	// 	$('#vertical-thumbnail .item-thumb').removeClass('active');
+	// 	$('#vertical-thumbnail .item-thumb[data-owl='+index+']').addClass('active');
+	// 	var wdw = $(window).width();
+	// 	var ci = $('#vertical-thumbnail .item-thumb').length;
+	// 	if(wdw >= 1199 && ci > 3) {
+	// 		$('#vertical-thumbnail').slick('slickGoTo', index);
+	// 	}else if(wdw < 1199 && wdw >= 768 && ci > 2){
+	// 		$('#vertical-thumbnail').slick('slickGoTo', index);
+	// 	}else if(wdw < 768 && wdw >= 600 && ci > 3){
+	// 		$('#vertical-thumbnail').slick('slickGoTo', index);
+	// 	}else if(wdw < 768 && wdw >= 600 && ci > 2){
+	// 		$('#vertical-thumbnail').slick('slickGoTo', index);
+	// 	}else if(wdw < 360){
+	// 		$('#vertical-thumbnail').slick('slickGoTo', index);
+	// 	}
+	// });
 	
 	$('#vertical-thumbnail .item-thumb').click(function(){
 		$('#vertical-thumbnail .item-thumb').removeClass('active');

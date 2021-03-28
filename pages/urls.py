@@ -11,6 +11,13 @@ urlpatterns =[
     path('globle-footprint/',globle_footprint, name='globle-footprint'),
     path('contact-us/',contact__us, name='contact-us'),
     path('w-cut-bag/',wcutbag, name='w-cut-bag'),
+    path('non-woven-fabric/',non_woven_fabric, name='non-woven-fabric'),
+    path('sack-bags/',sack_bags, name='sack-bags'),
+    path('wine-bags/',wine_bags, name='wine-bags'),
+    path('loop-handle-bag/',loop_handle_bag, name='loop-handle-bag'),
+    path('leno-mesh-bag/',leno_mesh_bag, name='leno-mesh-bag'),
+    path('jumbo-fibc-bag/',jumbo_fibc_bag, name='jumbo-fibc-bag'),
+    path('d-cut-bag/',d_cut_bag, name='d-cut-bag'),
     path('save_contact',contact_us),
     # path('', TemplateView.as_view(template_name='index.html')),
 ]
