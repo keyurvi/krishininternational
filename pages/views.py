@@ -28,6 +28,27 @@ def contact__us(request):
 def wcutbag(request):
     return render(request, 'w-cut-bag.html')
 
+def non_woven_fabric(request):
+    return render(request, 'non-woven-fabric.html')
+
+def sack_bags(request):
+    return render(request, 'sack-bags.html')
+
+def wine_bags(request):
+    return render(request, 'wine-bags.html')
+
+def loop_handle_bag(request):
+    return render(request, 'loop-handle-bag.html')
+
+def leno_mesh_bag(request):
+    return render(request, 'leno-mesh-bag.html')
+
+def jumbo_fibc_bag(request):
+    return render(request, 'jumbo-fibc-bag.html')
+
+def d_cut_bag(request):
+    return render(request, 'd-cut-bag.html')
+
 def contact_us(request):
     if request.method == 'POST':
         form = ContactUsForm(request.POST)

@@ -40,7 +40,7 @@
                     <div class="middle-header-wrapper">
                         <div class="left-content">
                             <div class="logo">
-                                <a href="index.html"><img src='{% static "img/logo.png" %}' alt="" /></a>
+                                <a href="{% url 'home' %}"><img src='{% static "img/logo.png" %}' alt="" /></a>
                             </div>
                             <button id="toggle_menu" class="menubar-icon"><span class="icon_menu"></span></button>
                         </div>
@@ -48,23 +48,23 @@
                             <nav class="navigation-top-menu">
                                 <ul class="parent-menu">
                                     <li class="items parent level0">
-                                        <a href="index.html">HOME</a>
+                                        <a href="{% url 'home' %}">HOME</a>
                                     </li>
                                     <li class="items parent level0">
-                                        <a href="about-us.html">ABOUT US</a>
+                                        <a href="{% url 'about-us' %}">ABOUT US</a>
                                     </li>
                                     <li class="items parent full-width level0">
-                                        <a href="products.html">OUR PRODUCTS</a>
+                                        <a href="{% url 'products' %}">OUR PRODUCTS</a>
                                     </li>
                                     <li class="items parent full-width level0">
-                                        <a href="why.html">Why Choose Us</a>
+                                        <a href="{% url 'why-choose-us' %}">Why Choose Us</a>
                                     </li>
                                     <li class="items parent full-width level0">
-                                        <a href="globle-footprint.html">Global Foot print</a>
+                                        <a href="{% url 'globle-footprint' %}">Global Foot print</a>
                                     </li>
-                                    
+
                                     <li class="items parent level0">
-                                        <a href="contactus.html">CONTACT US</a>
+                                        <a href="{% url 'contact-us' %}">CONTACT US</a>
                                     </li>
                                     <li class="items parent serach-box">
                                         <form>
@@ -110,7 +110,10 @@
                                                 <img class="img-fluid" src='{% static "img/pp-n-w/5WCUTBAGS/FINAL/2.jpg" %}' alt="" />
                                             </div>
                                             <div class="item-thumb" data-owl="2">
-                                                <img class="img-fluid" src='{% static "img/pp-n-w/5WCUTBAGS/FINAL/1.jpg" %}' alt="" />
+                                                <img class="img-fluid" src='{% static "img/pp-n-w/5WCUTBAGS/FINAL/3.jpg" %}' alt="" />
+                                            </div>
+                                            <div class="item-thumb" data-owl="3">
+                                                <img class="img-fluid" src='{% static "img/pp-n-w/5WCUTBAGS/FINAL/4.jpg" %}' alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -123,7 +126,10 @@
                                                 <img class="img-fluid" src='{% static "img/pp-n-w/5WCUTBAGS/FINAL/2.jpg" %}' alt="" />
                                             </div>
                                             <div class="item-image">
-                                                <img class="img-fluid" src='{% static "img/pp-n-w/5WCUTBAGS/FINAL/1.jpg" %}' alt="" />
+                                                <img class="img-fluid" src='{% static "img/pp-n-w/5WCUTBAGS/FINAL/3.jpg" %}' alt="" />
+                                            </div>
+                                            <div class="item-image">
+                                                <img class="img-fluid" src='{% static "img/pp-n-w/5WCUTBAGS/FINAL/4.jpg" %}' alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -217,22 +223,79 @@
                 <div class="container">
                     <div class="products-widget">
                         <div class="content-heading">
-                            <h2 class="title">LATEST PRODUCTS</h2>
+                            <h2 class="title">Latest Products</h2>
                         </div>
                         <div class="products-widget-content clear-margin-owl">
                             <div id="new-products-widget" class="owl-carousel owl-one-row products-grid">
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
-                                                <img class="img-fluid product-photo" src='{% static "img/loop/unnamed (1).jpg" %}' alt="" />
+                                            <a href="{% url 'non-woven-fabric' %}" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/slider/Shutterstock-256975894-37586-262x328.png" %}' alt="" />
                                             </a>
-                                            
+
                                         </div>
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'non-woven-fabric' %}">
+                                                        Non Woven Fabric
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <a href="{% url 'sack-bags' %}" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/slider/14G-262x328.jpg" %}' alt="" />
+                                            </a>
+
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-details--1st">
+                                                <div class="product-name">
+                                                    <a href="{% url 'sack-bags' %}">
+                                                        Sack bags
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <a href="{% url 'wine-bags' %}" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/slider/wine-bottles-262x328.jpg" %}' alt="" />
+                                            </a>
+
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-details--1st">
+                                                <div class="product-name">
+                                                    <a href="{% url 'wine-bags' %}">
+                                                        Wine bags
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product-item">
+                                        <div class="product-image">
+                                            <a href="{% url 'loop-handle-bag' %}" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/slider/non-woven-loop-handle-bag-500x500-262x328.jpg" %}' alt="" />
+                                            </a>
+
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-details--1st">
+                                                <div class="product-name">
+                                                    <a href="{% url 'loop-handle-bag' %}">
                                                         Loop Handle Bag
                                                     </a>
                                                 </div>
@@ -243,16 +306,16 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
-                                                <img class="img-fluid product-photo" src='{% static "img/wine-bag/non-woven-wine-bags-can-be-loaded-with-single-or-multiple-red-wine-non-woven-tote-bags06.jpg" %}' alt="" />
+                                            <a href="{% url 'leno-mesh-bag' %}" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/slider/12D-262x328.jpg" %}' alt="" />
                                             </a>
-                                            
+
                                         </div>
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
-                                                        Wine bag
+                                                    <a href="{% url 'leno-mesh-bag' %}">
+                                                        Leno/Mesh Bag
                                                     </a>
                                                 </div>
                                             </div>
@@ -262,80 +325,63 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
-                                                <img class="img-fluid product-photo" src='{% static "img/5wcut-bag/24.jpg" %}' alt="" />
+                                            <a href="{% url 'jumbo-fibc-bag' %}" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/slider/1000KG-1m3-Large-Bags-Flexible-Container-Chemical-262x328.png" %}' alt="" />
                                             </a>
-                                            
+
                                         </div>
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
-                                                        W cut bags
+                                                    <a href="{% url 'jumbo-fibc-bag' %}">
+                                                        Jumbo Bag / FIBC Bag
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
-                                                <img class="img-fluid product-photo" src='{% static "img/4dcut-bag/d-cut-non-woven-carry-bag-500x500.jpg" %}' alt="" />
+                                            <a href="{% url 'w-cut-bag' %}" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/slider/wu-cut-non-woven-bag-1545054931-306-262x328.jpg" %}' alt="" />
                                             </a>
-                                            
+
                                         </div>
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
-                                                        D cut Bags
+                                                    <a href="{% url 'w-cut-bag' %}">
+                                                       W-Cut Bag
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
-                                                <img class="img-fluid product-photo" src='{% static "img/3leno-bag/Leno-Bag.jpg" %}' alt="" />
+                                            <a href="{% url 'd-cut-bag' %}" class="product-image-link">
+                                                <img class="img-fluid product-photo" src='{% static "img/slider/d-cut-non-woven-bag-gallery-1-1545054151-308-262x328.jpg" %}' alt="" />
                                             </a>
-                                            
+
                                         </div>
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
-                                                        Lend Bags
+                                                    <a href="{% url 'd-cut-bag' %}">
+                                                       D-Cut Bag
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="product-item">
-                                        <div class="product-image">
-                                            <a href="#" class="product-image-link">
-                                                <img class="img-fluid product-photo" src='{% static "img/5wcut-bag/24.jpg" %}' alt="" />
-                                            </a>
-                                            
-                                        </div>
-                                        <div class="product-details">
-                                            <div class="product-details--1st">
-                                                <div class="product-name">
-                                                    <a href="#">
-                                                        Loop Handle Bag
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
+
                             </div>
                         </div>
                     </div>
