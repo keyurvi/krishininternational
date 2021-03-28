@@ -85,7 +85,7 @@
             <div class="banner-slider-wrapper template-2">
                 <div id="slider_dots" class="owl-carousel banner-slider">
                     <div class="item">
-                    <video width="100%" height="100%" autoplay muted loop="">
+                    <video width="100%" height="100%" autoplay muted>
                         <source src='{% static "video/globle (2).mp4" %}' type="video/mp4" id="vid">
                     </video>
                     </div>
@@ -295,7 +295,7 @@
                                 <div class="item">
                                     <div class="product-item">
                                         <div class="product-image">
-                                            <a href="#" class="product-image-link">
+                                            <a href="{% url 'w-cut-bag' %}" class="product-image-link">
                                                 <img class="img-fluid product-photo" src='{% static "img/slider/wu-cut-non-woven-bag-1545054931-306-262x328.jpg" %}' alt="" />
                                             </a>
                                             
@@ -303,7 +303,7 @@
                                         <div class="product-details">
                                             <div class="product-details--1st">
                                                 <div class="product-name">
-                                                    <a href="#">
+                                                    <a href="{% url 'w-cut-bag' %}">
                                                        W-Cut Bag
                                                     </a>
                                                 </div>
@@ -400,8 +400,8 @@
                 </div>
             </div>
         </footer>
-        <script>
-    document.getElementById('vid').play();
-</script>
+        <script type="text/javascript">
+            document.getElementById('vid').play();
+        </script>
     </body>
 </html>
