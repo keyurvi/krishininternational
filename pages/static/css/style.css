@@ -1549,7 +1549,7 @@ select:focus,
     color: #000000;
 }
 .indiamart-logo {
-    width: 20%;
+    width: 13%;
 }
 @media (max-width: 991.98px){
 	.st-deals .time-countdown {
@@ -6008,4 +6008,8 @@ li.items.parent.serach-box i.fas.fa-search {
 }
 .gmap_canvas iframe {
     width: 100% !important;
+}
+
+.find-us {
+	padding-bottom: 2px !important;
 }
