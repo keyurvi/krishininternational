@@ -322,56 +322,107 @@
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="ft-block ft-contact">
                                 <div class="logo"><img src='{% static "img/logo.png" %}' alt="" /></div>
-                                <address>&copy; 2021 <a href="#">Krishin International</a>. All rights reserved</address>
-
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12">
                             <div class="ft-block ft-menu">
-                                <h4 class="title">ABOUT</h4>
+                                <h4 class="title">USEFUL LINKS</h4>
+                                <br/>
                                 <div class="ft-menu-content">
                                     <ul>
-                                        <li><a href="#" title="">Our Story</a></li>
-                                        <li><a href="#" title="">Design</a></li>
-                                        <li><a href="#" title="">Offices</a></li>
-                                        <li><a href="#" title="">Our policies</a></li>
-                                        <li><a href="#" title="">Affinity Card</a></li>
+                                        <li><a href="{% url 'home' %}">HOME</a>
+                                   </li>
+                                    <li><a href="{% url 'about-us' %}">ABOUT US</a>
+                                   </li>
+                                    <li class="items parent full-width level0"><a href="{% url 'products' %}">OUR PRODUCTS</a>
+                                   </li>
+                                    <li class="items parent full-width level0"><a href="{% url 'why-choose-us' %}">Why Choose Us</a>
+                                   </li>
+                                    <li class="items parent full-width level0"><a href="{% url 'globle-footprint' %}">Global Footprint</a>
+                                    </li>
+
+                                    <li><a href="{% url 'contact-us' %}">CONTACT US</a>
+                                   </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
                             <div class="ft-block ft-menu">
-                                <h4 class="title">HELP</h4>
+                                <h4 class="title">PRODUCTS</h4>
+                                <br/>
                                 <div class="ft-menu-content">
                                     <ul>
-                                        <li><a href="#" title="">FAQ</a></li>
-                                        <li><a href="#" title="">Warranty</a></li>
-                                        <li><a href="#" title="">Shipments</a></li>
-                                        <li><a href="#" title="">Delibery & Returns</a></li>
-                                        <li><a href="#" title="">Contact us</a></li>
+                                        <li><a href="{% url 'non-woven-fabric' %}" title="">Non Woven Fabric</a></li>
+                                        <li><a href="{% url 'sack-bags' %}" title="">Sack bags</a></li>
+                                        <li><a href="{% url 'wine-bags' %}" title="">Wine bags</a></li>
+                                        <li><a href="{% url 'loop-handle-bag' %}" title="">Loop Handle Bag</a></li>
+                                        <li><a href="{% url 'leno-mesh-bag' %}" title="">Leno/Mesh Bag</a></li>
+                                        <li><a href="{% url 'jumbo-fibc-bag' %}" title="">Jumbo Bag / FIBC Bag</a></li>
+                                        <li><a href="{% url 'w-cut-bag' %}" title="">W-Cut Bag</a></li>
+                                        <li><a href="{% url 'd-cut-bag' %}" title="">D-Cut Bag</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col col-xl-4 col-lg-4 col-sm-12 col-12">
                             <div class="ft-block ft-subscribe">
-                                <h4 class="title">SUBSCRIBE TO OUR NEWSLETTER</h4>
-                                <form class="needs-validation" action="#" novalidate>
-                                    <div class="form-subscribe form-input-group">
-                                        <div class="input-group">
-                                            <input type="email" class="form-control" placeholder="Enter your email address" required />
-                                            <div class="invalid-feedback">Please input valid email ID</div>
+                                <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="">
+                                        <div class="d-flex">
+                                            <div class="cmpny-icns"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                            <div class="cmpny-dtals">
+                                            <h4 class="text-uppercase cntnt-tlte">Corporate Office:</h4>
+                                            <address>214 – Vitt Bhavan, 2nd  Floor, Near Over Bridge, Gondal  Road,<br>Rajkot – 360002, Gujarat, India.</address>
                                         </div>
-                                        <div class="actions-toolbar">
-                                            <button type="submit" class="btn btn-submit">Subscribe</button>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="">
+                                        <div class="d-flex">
+                                            <div class="cmpny-icns"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                            <div class="cmpny-dtals">
+                                            <h4 class="text-uppercase cntnt-tlte">Warehouse:</h4>
+                                            <address>Plot No. 180, Phase B, Golden Green Industrial Park, <br>Rajkot – 360311, Gujarat, India.</address>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="">
+                                        <div class="d-flex">
+                                            <div class="cmpny-icns"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                            <div class="cmpny-dtals"><p>+91 (942) 67-29-972</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="">
+                                        <div class="d-flex align-items-center">
+                                            <div class="cmpny-icns"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                            <div class="cmpny-dtals mb-0"><p class="mb-0"><a href="mailto:info@krishinindia.com">
+                                            info@krishinindia.com</a></p></div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+                            </div>
+                            <!-- <div class="ft-block ft-payment-image">
+                                <img class="img-fluid" src="images/payment_icon.png" alt="" />
+                            </div> -->
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="footer-bottom">
+            	<div class="container">
+            		<p class="mb-0">&copy; 2021 <a href="#">Krishin International</a>. All rights reserved</p>
+            	</div>
             </div>
         </footer>
     </body>

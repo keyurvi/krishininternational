@@ -4162,7 +4162,7 @@ ul.why-choose-list li::before {
 .footer .ft-middle {
     border-top: 1px solid #e7e5e6;
     background-color: #fcf6de;
-    padding: 92px 0 25px;
+    padding: 33px 0 0px;
 }
 .footer .ft-middle .ft-block {
 	margin-bottom: 53px;
@@ -6012,4 +6012,15 @@ li.items.parent.serach-box i.fas.fa-search {
 
 .find-us {
 	padding-bottom: 2px !important;
+}
+footer .logo img {
+    width: 80%;
+    padding: 0 !important;
+}
+.footer-bottom {
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-bottom a {
+    font-weight: 900;
 }
